@@ -1,0 +1,122 @@
+body{
+    text-align: center;
+    font-size: 20px;
+    background-color: cadetblue;
+}
+
+
+
+p#leiras{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    text-align: center,justify;
+    background-color: rgb(34, 248, 80);
+}
+
+
+div#gird {
+    border: 1px solid black;
+    color: white;
+    background-color: #8b7b1c;
+}
+
+
+  
+.grid-container {
+    width: 490px;
+    height: 490px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    
+}
+
+.grid-container div {
+    display: flex;
+    font-weight: bold;
+
+}
+
+.pluszelem{
+    width: 70px;
+    height: 70px;
+    display:inline-grid;
+    background-color: #8b7b1c;
+
+}
+
+
+
+#kor_vege {
+    margin-top: 50px;
+}
+#side {
+    display: inline-table;
+
+}
+
+button{
+    border-radius: 12px;
+}
+
+#b2{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+#b5{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: block;
+}
+#b8{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+#b11{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: block;
+}
+
+
+table{
+  display: inline-table;
+}
+
+
+
+#p1{ 
+    margin-left: 3%;
+    margin-top: 40%;
+    color:red; 
+}
+#p2{ 
+    margin-left: 3%;
+    margin-top: 40%;
+    color:rgb(0, 238, 255);
+}
+#p3{ 
+    margin-left: 3%;
+    margin-top: 40%;
+    color:rgb(73, 6, 95);
+}
+#p4{ 
+    margin-left: 3%;
+    margin-top: 40%;
+    color:blue;  
+}
+
+#k1{ 
+    color:red;
+}
+#k2{ 
+    color:rgb(0, 238, 255);
+}
+#k3{ 
+    color:rgb(73, 6, 95);
+}
+#k4{ 
+    color:blue;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katakomba</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    Játékosok száma: <input type="number" id="jatekosszam" value="2"><br>
+    Játékosonkénti kincsek száma: <input type="number" id="kincsszam" value="2"><br>
+
+    <button id="start">Start</button>
+    <button id="ujra">Újrakezdés</button>
+    <button id="segitseg">Segítség</button>
+
+    <p id="leiras" style="display: none">A játék leírása:
+        A katakomba szobáit egy 7x7-es négyzetrács cellái jelképezik. Minden szoba esetén adott, hogy mely falain van
+        ajtó. Ha két szomszédos szoba érintkező falán egy-egy ajtó van, akkor át lehet menni egyik szobából a másikba. A
+        négyzetrács páros sorait és oszlopait el lehet tolni, a többi szoba végig rögzített a játék során. Az
+        eltolásokkal az ajtókon keresztül utak nyílnak a szobák között, így lehet eljutni a kincsekhez. Mindegyik kérő
+        arra törekszik, hogy a katakomba szobáinak ötletes eltolásával eljusson a kincsekhez. Aki elsőként találja meg
+        mindahányat és kiindulópontjára sikeresen visszaérkezik az a nyertes.
+    </p>
+    <hr>
+
+
+    <div class="parent" id="parent" style="display: none">
+
+        <table id=table>
+            <tr>
+                <td></td>
+                <td>
+                    <button id="b1">🠇</button>
+                    <button id="b2">🠇</button>
+                    <button id="b3">🠇</button>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="b10">🠆</button>
+                    <button id="b11">🠆</button>
+                    <button id="b12">🠆</button>
+                </td>
+                <td>
+                    <div class="grid-container" id="gird"></div>
+                </td>
+                <td>
+                    <button id="b4">🠄</button>
+                    <button id="b5">🠄</button>
+                    <button id="b6">🠄</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button id="b7">🠅</button>
+                    <button id="b8">🠅</button>
+                    <button id="b9">🠅</button>
+                </td>
+                <td></td>
+
+            </tr>
+        </table>
+
+        <div class="side" id="side">
+            <button id="b">Balra</button>
+            <div class="pluszelem" id="plusz"></div>
+            <button id="j">Jobbra</button>
+            <br>
+            <button id="kor_vege">Kör vége</button>
+    
+    
+            <p id="aktual_player"></p>
+            <p id="stat"></p>
+        </div>
+        
+
+    </div>
+    <p id="ms" style="display: none"></p>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
